@@ -1,0 +1,23 @@
+@base <https://wiedzmin.fandom.com/wiki/> .
+
+@prefix rel: <https://example.org/relations>
+
+<Geralt> rel:zna <Ciri>, <Jaskier> ; 
+         rel:jest <Wiedzmin> ; 
+         rel:tytuł "z Rivii" .
+
+<Ciri> rel:zna <Geralt>, <Jaskier>, <Emhyr_var_Emreis> ;
+       rel:córka <Emhyr_var_Emreis> ; 
+       rel:ucieka <Dziki_Gon> .
+
+<Dziki_Gon> rel:ściga <Ciri> .
+
+<Jaskier> rel:zna <Ciri>, <Geralt> ;
+          rel:tytuł "Mistrz" ;
+          rel:zawód "Bard" .
+
+<Emhyr_var_Emreis> rel:ojciec <Ciri> ;
+                   rel:tytuł "Cesarz" ;
+                   rel:rządzi <Nilfgard> .
+                   
+

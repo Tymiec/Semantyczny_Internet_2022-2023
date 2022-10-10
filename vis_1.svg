@@ -1,0 +1,326 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1126pt" height="399pt" viewBox="0.00 0.00 1126.18 399.20">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 395.2)">
+<title>%0</title>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-395.2 1122.1815,-395.2 1122.1815,4 -4,4"/>
+<!-- N9 -->
+<g id="node1" class="node">
+<title>N9</title>
+<g id="a_node1"><a xlink:href="https://wiedzmin.fandom.com/wiki/Nilfgard" xlink:title="&lt;https://wiedzmin.fandom.com/wiki/Nilfgard&gt;">
+<ellipse fill="none" stroke="#000000" cx="193.0409" cy="-284.4" rx="193.0819" ry="18"/>
+<text text-anchor="middle" x="193.0409" y="-280.2" font-family="Times,serif" font-size="14.00" fill="#000000">&lt;https://wiedzmin.fandom.com/wiki/Nilfgard&gt;</text>
+</a>
+</g>
+</g>
+<!-- N5 -->
+<g id="node2" class="node">
+<title>N5</title>
+<g id="a_node2"><a xlink:href="https://wiedzmin.fandom.com/wiki/Dziki_Gon" xlink:title="&lt;https://wiedzmin.fandom.com/wiki/Dziki_Gon&gt;">
+<ellipse fill="none" stroke="#000000" cx="375.0409" cy="-195.6" rx="203.4796" ry="18"/>
+<text text-anchor="middle" x="375.0409" y="-191.4" font-family="Times,serif" font-size="14.00" fill="#000000">&lt;https://wiedzmin.fandom.com/wiki/Dziki_Gon&gt;</text>
+</a>
+</g>
+</g>
+<!-- N4 -->
+<g id="node7" class="node">
+<title>N4</title>
+<g id="a_node7"><a xlink:href="https://wiedzmin.fandom.com/wiki/Ciri" xlink:title="&lt;https://wiedzmin.fandom.com/wiki/Ciri&gt;">
+<ellipse fill="none" stroke="#000000" cx="651.0409" cy="-284.4" rx="175.2028" ry="18"/>
+<text text-anchor="middle" x="651.0409" y="-280.2" font-family="Times,serif" font-size="14.00" fill="#000000">&lt;https://wiedzmin.fandom.com/wiki/Ciri&gt;</text>
+</a>
+</g>
+</g>
+<!-- N5&#45;&gt;N4 -->
+<g id="edge1" class="edge">
+<title>N5-&gt;N4</title>
+<g id="a_edge1"><a xlink:href="https://example.org/relationsściga" xlink:title="rel:ściga">
+<path fill="none" stroke="#000000" d="M429.3773,-213.0821C474.9234,-227.7361 539.9992,-248.6735 587.8628,-264.0731"/>
+<polygon fill="#000000" stroke="#000000" points="586.9067,-267.4421 597.4981,-267.1732 589.0507,-260.7785 586.9067,-267.4421"/>
+</a>
+</g>
+<g id="a_edge1-label"><a xlink:href="https://example.org/relationsściga" xlink:title="rel:ściga">
+<text text-anchor="middle" x="563.1093" y="-235.8" font-family="Times,serif" font-size="14.00" fill="#000000">rel:ściga</text>
+</a>
+</g>
+</g>
+<!-- N6 -->
+<g id="node3" class="node">
+<title>N6</title>
+<g id="a_node3"><a xlink:href="https://wiedzmin.fandom.com/wiki/Emhyr_var_Emreis" xlink:title="&lt;https://wiedzmin.fandom.com/wiki/Emhyr_var_Emreis&gt;">
+<ellipse fill="none" stroke="#000000" cx="515.0409" cy="-373.2" rx="235.9032" ry="18"/>
+<text text-anchor="middle" x="515.0409" y="-369" font-family="Times,serif" font-size="14.00" fill="#000000">&lt;https://wiedzmin.fandom.com/wiki/Emhyr_var_Emreis&gt;</text>
+</a>
+</g>
+</g>
+<!-- N6&#45;&gt;N9 -->
+<g id="edge4" class="edge">
+<title>N6-&gt;N9</title>
+<g id="a_edge4"><a xlink:href="https://example.org/relationsrządzi" xlink:title="rel:rządzi">
+<path fill="none" stroke="#000000" d="M448.1722,-355.894C425.9022,-350.0528 400.9807,-343.4322 378.2435,-337.2 339.7976,-326.6621 296.9899,-314.4869 262.223,-304.4853"/>
+<polygon fill="#000000" stroke="#000000" points="262.7523,-300.9955 252.1742,-301.5907 260.8147,-307.722 262.7523,-300.9955"/>
+</a>
+</g>
+<g id="a_edge4-label"><a xlink:href="https://example.org/relationsrządzi" xlink:title="rel:rządzi">
+<text text-anchor="middle" x="406.4396" y="-324.6" font-family="Times,serif" font-size="14.00" fill="#000000">rel:rządzi</text>
+</a>
+</g>
+</g>
+<!-- N10 -->
+<g id="node4" class="node">
+<title>N10</title>
+<g id="a_node4"><a xlink:href="https://wiedzmin.fandom.com/wiki/Emhyr_var_Emreis" xlink:title="Cesarz">
+<polygon fill="#ffff00" stroke="#ffff00" points="458.1266,-302.4 403.9553,-302.4 403.9553,-266.4 458.1266,-266.4 458.1266,-302.4"/>
+<text text-anchor="middle" x="431.0409" y="-280.2" font-family="Times,serif" font-size="14.00" fill="#000000">Cesarz</text>
+</a>
+</g>
+</g>
+<!-- N6&#45;&gt;N10 -->
+<g id="edge3" class="edge">
+<title>N6-&gt;N10</title>
+<g id="a_edge3"><a xlink:href="https://example.org/relationstytuł" xlink:title="rel:tytuł">
+<path fill="none" stroke="#000000" d="M466.5473,-355.5102C458.2263,-350.6523 450.3669,-344.6179 444.4427,-337.2 438.9043,-330.2651 435.6255,-321.3193 433.6939,-312.7689"/>
+<polygon fill="#000000" stroke="#000000" points="437.1042,-311.9506 431.9445,-302.697 430.2075,-313.1485 437.1042,-311.9506"/>
+</a>
+</g>
+<g id="a_edge3-label"><a xlink:href="https://example.org/relationstytuł" xlink:title="rel:tytuł">
+<text text-anchor="middle" x="469.34" y="-324.6" font-family="Times,serif" font-size="14.00" fill="#000000">rel:tytuł</text>
+</a>
+</g>
+</g>
+<!-- N6&#45;&gt;N4 -->
+<g id="edge2" class="edge">
+<title>N6-&gt;N4</title>
+<g id="a_edge2"><a xlink:href="https://example.org/relationsojciec" xlink:title="rel:ojciec">
+<path fill="none" stroke="#000000" d="M510.27,-354.9972C508.4918,-343.88 508.4463,-330.0038 515.9595,-320.4 521.3975,-313.449 534.6476,-307.5419 550.8324,-302.6467"/>
+<polygon fill="#000000" stroke="#000000" points="551.9853,-305.9583 560.6639,-299.8811 550.0898,-299.2198 551.9853,-305.9583"/>
+</a>
+</g>
+<g id="a_edge2-label"><a xlink:href="https://example.org/relationsojciec" xlink:title="rel:ojciec">
+<text text-anchor="middle" x="542.0816" y="-324.6" font-family="Times,serif" font-size="14.00" fill="#000000">rel:ojciec</text>
+</a>
+</g>
+</g>
+<!-- N3 -->
+<g id="node5" class="node">
+<title>N3</title>
+<g id="a_node5"><a xlink:href="https://wiedzmin.fandom.com/wiki/Geralt" xlink:title="&lt;https://wiedzmin.fandom.com/wiki/Geralt&gt;">
+<ellipse fill="none" stroke="#000000" cx="695.0409" cy="-106.8" rx="184.4118" ry="18"/>
+<text text-anchor="middle" x="695.0409" y="-102.6" font-family="Times,serif" font-size="14.00" fill="#000000">&lt;https://wiedzmin.fandom.com/wiki/Geralt&gt;</text>
+</a>
+</g>
+</g>
+<!-- N0 -->
+<g id="node6" class="node">
+<title>N0</title>
+<g id="a_node6"><a xlink:href="https://wiedzmin.fandom.com/wiki/Jaskier" xlink:title="&lt;https://wiedzmin.fandom.com/wiki/Jaskier&gt;">
+<ellipse fill="none" stroke="#000000" cx="931.0409" cy="-195.6" rx="187.2812" ry="18"/>
+<text text-anchor="middle" x="931.0409" y="-191.4" font-family="Times,serif" font-size="14.00" fill="#000000">&lt;https://wiedzmin.fandom.com/wiki/Jaskier&gt;</text>
+</a>
+</g>
+</g>
+<!-- N3&#45;&gt;N0 -->
+<g id="edge6" class="edge">
+<title>N3-&gt;N0</title>
+<g id="a_edge6"><a xlink:href="https://example.org/relationszna" xlink:title="rel:zna">
+<path fill="none" stroke="#000000" d="M741.5701,-124.3076C779.8463,-138.7098 834.2194,-159.1688 874.9082,-174.4789"/>
+<polygon fill="#000000" stroke="#000000" points="873.823,-177.81 884.4149,-178.056 876.2882,-171.2585 873.823,-177.81"/>
+</a>
+</g>
+<g id="a_edge6-label"><a xlink:href="https://example.org/relationszna" xlink:title="rel:zna">
+<text text-anchor="middle" x="853.0837" y="-147" font-family="Times,serif" font-size="14.00" fill="#000000">rel:zna</text>
+</a>
+</g>
+</g>
+<!-- N3&#45;&gt;N4 -->
+<g id="edge5" class="edge">
+<title>N3-&gt;N4</title>
+<g id="a_edge5"><a xlink:href="https://example.org/relationszna" xlink:title="rel:zna">
+<path fill="none" stroke="#000000" d="M690.568,-124.8543C682.8842,-155.8691 667.1252,-219.4781 657.9972,-256.322"/>
+<polygon fill="#000000" stroke="#000000" points="654.5096,-255.8452 655.502,-266.3934 661.3042,-257.5285 654.5096,-255.8452"/>
+</a>
+</g>
+<g id="a_edge5-label"><a xlink:href="https://example.org/relationszna" xlink:title="rel:zna">
+<text text-anchor="middle" x="696.0837" y="-191.4" font-family="Times,serif" font-size="14.00" fill="#000000">rel:zna</text>
+</a>
+</g>
+</g>
+<!-- N7 -->
+<g id="node8" class="node">
+<title>N7</title>
+<g id="a_node8"><a xlink:href="https://wiedzmin.fandom.com/wiki/Ciri" xlink:title="z Rivii">
+<polygon fill="#ffff00" stroke="#ffff00" points="599.0409,-36 545.0409,-36 545.0409,0 599.0409,0 599.0409,-36"/>
+<text text-anchor="middle" x="572.0409" y="-13.8" font-family="Times,serif" font-size="14.00" fill="#000000">z Rivii</text>
+</a>
+</g>
+</g>
+<!-- N3&#45;&gt;N7 -->
+<g id="edge8" class="edge">
+<title>N3-&gt;N7</title>
+<g id="a_edge8"><a xlink:href="https://example.org/relationstytuł" xlink:title="rel:tytuł">
+<path fill="none" stroke="#000000" d="M670.1501,-88.83C651.6004,-75.4381 626.0646,-57.0025 605.6951,-42.2966"/>
+<polygon fill="#000000" stroke="#000000" points="607.4736,-39.2638 597.317,-36.2481 603.3761,-44.9393 607.4736,-39.2638"/>
+</a>
+</g>
+<g id="a_edge8-label"><a xlink:href="https://example.org/relationstytuł" xlink:title="rel:tytuł">
+<text text-anchor="middle" x="668.34" y="-58.2" font-family="Times,serif" font-size="14.00" fill="#000000">rel:tytuł</text>
+</a>
+</g>
+</g>
+<!-- N8 -->
+<g id="node10" class="node">
+<title>N8</title>
+<g id="a_node10"><a xlink:href="https://wiedzmin.fandom.com/wiki/Wiedzmin" xlink:title="&lt;https://wiedzmin.fandom.com/wiki/Wiedzmin&gt;">
+<ellipse fill="none" stroke="#000000" cx="818.0409" cy="-18" rx="200.6081" ry="18"/>
+<text text-anchor="middle" x="818.0409" y="-13.8" font-family="Times,serif" font-size="14.00" fill="#000000">&lt;https://wiedzmin.fandom.com/wiki/Wiedzmin&gt;</text>
+</a>
+</g>
+</g>
+<!-- N3&#45;&gt;N8 -->
+<g id="edge7" class="edge">
+<title>N3-&gt;N8</title>
+<g id="a_edge7"><a xlink:href="https://example.org/relationsjest" xlink:title="rel:jest">
+<path fill="none" stroke="#000000" d="M719.9318,-88.83C738.6876,-75.2892 764.5859,-56.592 785.0642,-41.8076"/>
+<polygon fill="#000000" stroke="#000000" points="787.1279,-44.6345 793.1871,-35.9433 783.0305,-38.959 787.1279,-44.6345"/>
+</a>
+</g>
+<g id="a_edge7-label"><a xlink:href="https://example.org/relationsjest" xlink:title="rel:jest">
+<text text-anchor="middle" x="786.0893" y="-58.2" font-family="Times,serif" font-size="14.00" fill="#000000">rel:jest</text>
+</a>
+</g>
+</g>
+<!-- N0&#45;&gt;N3 -->
+<g id="edge15" class="edge">
+<title>N0-&gt;N3</title>
+<g id="a_edge15"><a xlink:href="https://example.org/relationszna" xlink:title="rel:zna">
+<path fill="none" stroke="#000000" d="M828.4234,-180.5101C795.3534,-174.5345 763.4937,-167.2629 748.9553,-159.6 736.4266,-152.9964 724.8652,-142.5549 715.6883,-132.6942"/>
+<polygon fill="#000000" stroke="#000000" points="718.1182,-130.1589 708.8669,-124.9951 712.8788,-134.801 718.1182,-130.1589"/>
+</a>
+</g>
+<g id="a_edge15-label"><a xlink:href="https://example.org/relationszna" xlink:title="rel:zna">
+<text text-anchor="middle" x="767.0837" y="-147" font-family="Times,serif" font-size="14.00" fill="#000000">rel:zna</text>
+</a>
+</g>
+</g>
+<!-- N0&#45;&gt;N4 -->
+<g id="edge14" class="edge">
+<title>N0-&gt;N4</title>
+<g id="a_edge14"><a xlink:href="https://example.org/relationszna" xlink:title="rel:zna">
+<path fill="none" stroke="#000000" d="M911.4859,-213.5652C897.588,-225.3229 877.9288,-240.0106 858.0409,-248.4 841.1495,-255.5254 805.6093,-262.6055 768.6692,-268.5773"/>
+<polygon fill="#000000" stroke="#000000" points="768.0734,-265.1279 758.7449,-270.1509 769.1697,-272.0415 768.0734,-265.1279"/>
+</a>
+</g>
+<g id="a_edge14-label"><a xlink:href="https://example.org/relationszna" xlink:title="rel:zna">
+<text text-anchor="middle" x="904.0837" y="-235.8" font-family="Times,serif" font-size="14.00" fill="#000000">rel:zna</text>
+</a>
+</g>
+</g>
+<!-- N1 -->
+<g id="node9" class="node">
+<title>N1</title>
+<g id="a_node9"><a xlink:href="https://wiedzmin.fandom.com/wiki/Ciri" xlink:title="Bard">
+<polygon fill="#ffff00" stroke="#ffff00" points="954.0409,-124.8 900.0409,-124.8 900.0409,-88.8 954.0409,-88.8 954.0409,-124.8"/>
+<text text-anchor="middle" x="927.0409" y="-102.6" font-family="Times,serif" font-size="14.00" fill="#000000">Bard</text>
+</a>
+</g>
+</g>
+<!-- N0&#45;&gt;N1 -->
+<g id="edge17" class="edge">
+<title>N0-&gt;N1</title>
+<g id="a_edge17"><a xlink:href="https://example.org/relationszawód" xlink:title="rel:zawód">
+<path fill="none" stroke="#000000" d="M929.3864,-177.2991C928.9289,-171.6303 928.4787,-165.3607 928.1881,-159.6 927.788,-151.6676 927.5273,-143.0579 927.3575,-135.1375"/>
+<polygon fill="#000000" stroke="#000000" points="930.8527,-134.8296 927.1777,-124.8926 923.8538,-134.9525 930.8527,-134.8296"/>
+</a>
+</g>
+<g id="a_edge17-label"><a xlink:href="https://example.org/relationszawód" xlink:title="rel:zawód">
+<text text-anchor="middle" x="957.9673" y="-147" font-family="Times,serif" font-size="14.00" fill="#000000">rel:zawód</text>
+</a>
+</g>
+</g>
+<!-- N2 -->
+<g id="node11" class="node">
+<title>N2</title>
+<g id="a_node11"><a xlink:href="https://wiedzmin.fandom.com/wiki/Wiedzmin" xlink:title="Mistrz">
+<polygon fill="#ffff00" stroke="#ffff00" points="1037.0409,-124.8 983.0409,-124.8 983.0409,-88.8 1037.0409,-88.8 1037.0409,-124.8"/>
+<text text-anchor="middle" x="1010.0409" y="-102.6" font-family="Times,serif" font-size="14.00" fill="#000000">Mistrz</text>
+</a>
+</g>
+</g>
+<!-- N0&#45;&gt;N2 -->
+<g id="edge16" class="edge">
+<title>N0-&gt;N2</title>
+<g id="a_edge16"><a xlink:href="https://example.org/relationstytuł" xlink:title="rel:tytuł">
+<path fill="none" stroke="#000000" d="M966.5526,-177.9014C974.3648,-172.7982 982.0762,-166.6652 988.0409,-159.6 994.1848,-152.3226 998.8129,-143.0874 1002.1988,-134.3827"/>
+<polygon fill="#000000" stroke="#000000" points="1005.5131,-135.5078 1005.5082,-124.9129 998.905,-133.1984 1005.5131,-135.5078"/>
+</a>
+</g>
+<g id="a_edge16-label"><a xlink:href="https://example.org/relationstytuł" xlink:title="rel:tytuł">
+<text text-anchor="middle" x="1022.34" y="-147" font-family="Times,serif" font-size="14.00" fill="#000000">rel:tytuł</text>
+</a>
+</g>
+</g>
+<!-- N4&#45;&gt;N5 -->
+<g id="edge13" class="edge">
+<title>N4-&gt;N5</title>
+<g id="a_edge13"><a xlink:href="https://example.org/relationsucieka" xlink:title="rel:ucieka">
+<path fill="none" stroke="#000000" d="M530.91,-271.2686C489.1884,-265.3506 448.2466,-257.6071 429.8501,-248.4 416.8569,-241.8971 404.9128,-231.238 395.5141,-221.1935"/>
+<polygon fill="#000000" stroke="#000000" points="398.1133,-218.8494 388.8478,-213.7111 392.8867,-223.5059 398.1133,-218.8494"/>
+</a>
+</g>
+<g id="a_edge13-label"><a xlink:href="https://example.org/relationsucieka" xlink:title="rel:ucieka">
+<text text-anchor="middle" x="457.6363" y="-235.8" font-family="Times,serif" font-size="14.00" fill="#000000">rel:ucieka</text>
+</a>
+</g>
+</g>
+<!-- N4&#45;&gt;N6 -->
+<g id="edge11" class="edge">
+<title>N4-&gt;N6</title>
+<g id="a_edge11"><a xlink:href="https://example.org/relationszna" xlink:title="rel:zna">
+<path fill="none" stroke="#000000" d="M620.1326,-302.1734C610.6564,-307.8207 600.2752,-314.2108 590.9553,-320.4 580.4356,-327.386 578.3578,-329.9177 568.0409,-337.2 562.3627,-341.2081 556.2989,-345.4042 550.376,-349.4579"/>
+<polygon fill="#000000" stroke="#000000" points="548.156,-346.7351 541.8604,-355.2566 552.096,-352.5211 548.156,-346.7351"/>
+</a>
+</g>
+<g id="a_edge11-label"><a xlink:href="https://example.org/relationszna" xlink:title="rel:zna">
+<text text-anchor="middle" x="609.0837" y="-324.6" font-family="Times,serif" font-size="14.00" fill="#000000">rel:zna</text>
+</a>
+</g>
+</g>
+<!-- N4&#45;&gt;N6 -->
+<g id="edge12" class="edge">
+<title>N4-&gt;N6</title>
+<g id="a_edge12"><a xlink:href="https://example.org/relationscórka" xlink:title="rel:córka">
+<path fill="none" stroke="#000000" d="M647.5718,-302.5718C644.5096,-313.9626 638.9325,-328.151 629.0409,-337.2 622.712,-342.9898 615.4555,-347.8484 607.7358,-351.9257"/>
+<polygon fill="#000000" stroke="#000000" points="605.9907,-348.8809 598.4886,-356.3621 609.0186,-355.1922 605.9907,-348.8809"/>
+</a>
+</g>
+<g id="a_edge12-label"><a xlink:href="https://example.org/relationscórka" xlink:title="rel:córka">
+<text text-anchor="middle" x="667.2443" y="-324.6" font-family="Times,serif" font-size="14.00" fill="#000000">rel:córka</text>
+</a>
+</g>
+</g>
+<!-- N4&#45;&gt;N3 -->
+<g id="edge9" class="edge">
+<title>N4-&gt;N3</title>
+<g id="a_edge9"><a xlink:href="https://example.org/relationszna" xlink:title="rel:zna">
+<path fill="none" stroke="#000000" d="M640.1138,-266.1092C628.6395,-244.4076 613.8199,-207.4129 625.9553,-177.6 633.2623,-159.6492 647.5523,-143.7664 661.2488,-131.6166"/>
+<polygon fill="#000000" stroke="#000000" points="663.8091,-134.0353 669.1872,-124.907 659.2904,-128.6891 663.8091,-134.0353"/>
+</a>
+</g>
+<g id="a_edge9-label"><a xlink:href="https://example.org/relationszna" xlink:title="rel:zna">
+<text text-anchor="middle" x="644.0837" y="-191.4" font-family="Times,serif" font-size="14.00" fill="#000000">rel:zna</text>
+</a>
+</g>
+</g>
+<!-- N4&#45;&gt;N0 -->
+<g id="edge10" class="edge">
+<title>N4-&gt;N0</title>
+<g id="a_edge10"><a xlink:href="https://example.org/relationszna" xlink:title="rel:zna">
+<path fill="none" stroke="#000000" d="M705.3598,-267.1732C751.4828,-252.5456 817.7655,-231.5245 866.5701,-216.0465"/>
+<polygon fill="#000000" stroke="#000000" points="867.9219,-219.2896 876.3959,-212.9303 865.8057,-212.6171 867.9219,-219.2896"/>
+</a>
+</g>
+<g id="a_edge10-label"><a xlink:href="https://example.org/relationszna" xlink:title="rel:zna">
+<text text-anchor="middle" x="835.0837" y="-235.8" font-family="Times,serif" font-size="14.00" fill="#000000">rel:zna</text>
+</a>
+</g>
+</g>
+</g>
+</svg>

@@ -1,0 +1,52 @@
+@base <https://wiedzmin.fandom.com/wiki/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rel: <https://example.org/relations>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+
+<Geralt> rel:zna <Ciri>, <Jaskier>; 
+         rel:jest <Wiedzmin>; 
+         rel:tytuł "z Rivii"^^xsd:string.
+
+<Ciri> rel:zna <Geralt>, <Jaskier>, <Emhyr_var_Emreis>;
+       rel:córka <Emhyr_var_Emreis>; 
+       rel:ucieka <Dziki_Gon>.
+
+<Dziki_Gon> rel:ściga <Ciri>.
+
+<Jaskier> rel:zna <Ciri>, <Geralt>;
+          rel:tytuł "Mistrz"^^xsd:string;
+          rel:zawód "Bard"^^xsd:string.
+
+<Emhyr_var_Emreis> rel:ojciec <Ciri> ;
+                   rel:tytuł "Cesarz"^^xsd:string;
+                   rel:rządzi <Nilfgard>.
+
+<Nilfgard> rel:powstał "01.01.1135"^^xsd:date.
+                   
+
+<Kaer_Morhen>
+    rel:zamieszkują [
+        a rdf:Bag;
+        rdf:_1 <Geralt>;
+        rdf:_2 <Vesemir>;
+        rdf:_3 <Lambert>;
+        rdf:_4 <Eskel>;
+        rdf:_5 <Coën>;
+    ].
+
+<Tytuły> rel:są _:el1.
+
+_:el1
+    rdf:first "z Rivii"^^xsd:string;
+    rdf:rest  _:el2.
+        
+_:el2 
+    rdf:first "Mistrz"^^xsd:string;
+    rdf:rest  _:el3.
+
+_:el
+    rdf:first "Cesarz"^^xsd:string;
+    rdf:rest  rdf:nil.
+
+
+
