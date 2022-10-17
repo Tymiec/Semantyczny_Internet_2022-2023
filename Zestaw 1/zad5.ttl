@@ -2,24 +2,26 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix rel: <https://example.org/relations>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix fhkb: <http://www.example.com/genealogy.owl#>.
 
-<Geralt> rel:zna <Ciri>, <Jaskier>; 
-         rel:jest <Wiedzmin>; 
-         rel:tytuł "z Rivii"^^xsd:string;
+<Geralt> foaf:knowns <Ciri>, <Jaskier>;
+         foaf:member <Wiedzmin>; 
+         foaf:title "z Rivii"^^xsd:string;
          rel:wiek "112"^^xsd:integer.
 
-<Ciri> rel:zna <Geralt>, <Jaskier>, <Emhyr_var_Emreis>;
-       rel:córka <Emhyr_var_Emreis>; 
+<Ciri> foaf:knowns <Geralt>, <Jaskier>, <Emhyr_var_Emreis>;
+       fhkb:isDaughterOf <Emhyr_var_Emreis>; 
        rel:ucieka <Dziki_Gon>.
 
 <Dziki_Gon> rel:ściga <Ciri>.
 
-<Jaskier> rel:zna <Ciri>, <Geralt>;
-          rel:tytuł "Mistrz"^^xsd:string;
+<Jaskier> foaf:knowns <Ciri>, <Geralt>;
+          foaf:title "Mistrz"^^xsd:string;
           rel:zawód "Bard"^^xsd:string.
 
-<Emhyr_var_Emreis> rel:ojciec <Ciri> ;
-                   rel:tytuł "Cesarz"^^xsd:string;
+<Emhyr_var_Emreis> fhkb:isFatherOf <Ciri> ;
+                   foaf:title "Cesarz"^^xsd:string;
                    rel:rządzi <Nilfgard>.
 
 <Nilfgard> rel:powstał "01.01.1135"^^xsd:date.

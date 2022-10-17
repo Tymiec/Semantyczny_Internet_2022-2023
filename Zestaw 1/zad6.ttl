@@ -1,0 +1,69 @@
+@base <https://wiedzmin.fandom.com/wiki/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rel: <https://example.org/relations>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix fhkb: <http://www.example.com/genealogy.owl#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<Character> rdf:type rdfs:Class.
+
+<Human> rdf:type rdfs:Class ;
+	rdfs:subClassOf <Character> .
+	
+<Wiedzmin> rdf:type rdfs:Class;
+           rdfs:subClassOf <Human>.
+
+<Elf> rdf:type rdfs:Class;
+      rdfs:subClassOf <Character>.
+
+<Geralt> a <Wiedzmin>;
+         foaf:knowns <Ciri>, <Jaskier>;
+         foaf:title "z Rivii"^^xsd:string;
+         rel:wiek "112"^^xsd:integer.
+
+<Ciri> a <Human>;
+       foaf:knowns <Geralt>, <Jaskier>, <Emhyr_var_Emreis>;
+       fhkb:isDaughterOf <Emhyr_var_Emreis>; 
+       rel:ucieka <Dziki_Gon>.
+
+<Dziki_Gon> rel:ściga <Ciri>.
+
+<Jaskier> a <Human>;
+          foaf:knowns <Ciri>, <Geralt>;
+          foaf:title "Mistrz"^^xsd:string;
+          rel:zawód "Bard"^^xsd:string.
+
+<Emhyr_var_Emreis> a <Human>;
+                   fhkb:isFatherOf <Ciri> ;
+                   foaf:title "Cesarz"^^xsd:string;
+                   rel:rządzi <Nilfgard>.
+
+<Nilfgard> rel:powstał "01.01.1135"^^xsd:date.
+           
+<Coën> a <Human>;
+       rel:żyje "false"^^xsd:boolean.
+
+<Kaer_Morhen>
+    rel:zamieszkują [
+        a rdf:Bag;
+        rdf:_1 <Geralt>;
+        rdf:_2 <Vesemir>;
+        rdf:_3 <Lambert>;
+        rdf:_4 <Eskel>;
+        rdf:_5 <Coën>;
+    ].
+
+<Tytuły> rel:są _:el1.
+
+_:el1
+    rdf:first "z Rivii"^^xsd:string;
+    rdf:rest  _:el2.
+        
+_:el2 
+    rdf:first "Mistrz"^^xsd:string;
+    rdf:rest  _:el3.
+
+_:el
+    rdf:first "Cesarz"^^xsd:string;
+    rdf:rest  rdf:nil.
