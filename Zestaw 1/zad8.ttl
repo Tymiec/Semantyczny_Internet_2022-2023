@@ -35,29 +35,38 @@
 	  rdfs:range rdfs:Literal.
 
 <Geralt> a <Wiedzmin>;
-         foaf:knowns <Ciri>, <Jaskier>;
+         foaf:knows <Ciri>, <Jaskier>;
          foaf:title "z Rivii"^^xsd:string;
          <rel:age> "112"^^xsd:integer;
-         rdfs:label 'Wiedzmin Geralt z Rivii'^^xsd:string.
+         rdfs:label 'Wiedzmin Geralt z Rivii'^^xsd:string;
+         <isAlive> "true"^^xsd:boolean.
 
 <Ciri> a <Human>;
-       foaf:knowns <Geralt>, <Jaskier>, <Emhyr_var_Emreis>;
+       foaf:knows <Geralt>, <Jaskier>, <Emhyr_var_Emreis>;
        fhkb:isDaughterOf <Emhyr_var_Emreis>; 
-       <flees> <Dziki_Gon>.
+       <rel:age> "21"^^xsd:integer;
+       <flees> <Dziki_Gon>;
+       <isAlive> "true"^^xsd:boolean.
 
 <Dziki_Gon> <chasing> <Ciri>;
         rdfs:seeAlso "https://pl.wikipedia.org/wiki/Wied%C5%BAmin_3:_Dziki_Gon"^^xsd:string;
         rdfs:comment "Więcej niż jedna osoba".
 
 <Jaskier> a <Human>;
-          foaf:knowns <Ciri>, <Geralt>;
+          foaf:knows <Ciri>, <Geralt>;
           foaf:title "Mistrz"^^xsd:string;
-          rel:zawód "Bard"^^xsd:string.
+          <rel:age> "47"^^xsd:integer;
+          rel:zawód "Bard"^^xsd:string;
+          <isAlive> "true"^^xsd:boolean.
 
 <Emhyr_var_Emreis> a <Human>;
                    fhkb:isFatherOf <Ciri> ;
                    foaf:title "Cesarz"^^xsd:string;
-                   rel:rządzi <Nilfgard>.
+                   rel:rządzi <Nilfgard>;
+                   <isAlive> "true"^^xsd:boolean.
+                   
+<Vesemir> a <Wiedzmin>;
+          <rel:age> "184"^^xsd:integer.
 
 <Nilfgard> rel:powstał "01.01.1135"^^xsd:date.
            

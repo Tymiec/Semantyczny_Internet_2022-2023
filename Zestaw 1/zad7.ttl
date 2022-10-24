@@ -34,19 +34,19 @@
 	  rdfs:range rdfs:Literal.
 
 <Geralt> a <Wiedzmin>;
-         foaf:knowns <Ciri>, <Jaskier>;
+         foaf:knows <Ciri>, <Jaskier>;
          foaf:title "z Rivii"^^xsd:string;
          <rel:age> "112"^^xsd:integer.
 
 <Ciri> a <Human>;
-       foaf:knowns <Geralt>, <Jaskier>, <Emhyr_var_Emreis>;
+       foaf:knows <Geralt>, <Jaskier>, <Emhyr_var_Emreis>;
        fhkb:isDaughterOf <Emhyr_var_Emreis>; 
        <flees> <Dziki_Gon>.
 
 <Dziki_Gon> <chasing> <Ciri>.
 
 <Jaskier> a <Human>;
-          foaf:knowns <Ciri>, <Geralt>;
+          foaf:knows <Ciri>, <Geralt>;
           foaf:title "Mistrz"^^xsd:string;
           rel:zawód "Bard"^^xsd:string.
 

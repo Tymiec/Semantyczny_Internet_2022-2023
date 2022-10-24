@@ -317,26 +317,26 @@
 <!-- N8&#45;&gt;N5 -->
 <g id="edge22" class="edge">
 <title>N8-&gt;N5</title>
-<g id="a_edge22"><a xlink:href="http://xmlns.com/foaf/0.1/knowns" xlink:title="foaf:knowns">
+<g id="a_edge22"><a xlink:href="http://xmlns.com/foaf/0.1/knows" xlink:title="foaf:knows">
 <path fill="none" stroke="#000000" d="M484.7083,-355.656C451.1826,-341.4116 403.7538,-321.26 367.8841,-306.0197"/>
 <polygon fill="#000000" stroke="#000000" points="369.1355,-302.7486 358.5631,-302.0593 366.3981,-309.1912 369.1355,-302.7486"/>
 </a>
 </g>
-<g id="a_edge22-label"><a xlink:href="http://xmlns.com/foaf/0.1/knowns" xlink:title="foaf:knowns">
-<text text-anchor="middle" x="475.9888" y="-324.6" font-family="Times,serif" font-size="14.00" fill="#000000">foaf:knowns</text>
+<g id="a_edge22-label"><a xlink:href="http://xmlns.com/foaf/0.1/knows" xlink:title="foaf:knows">
+<text text-anchor="middle" x="475.9888" y="-324.6" font-family="Times,serif" font-size="14.00" fill="#000000">foaf:knows</text>
 </a>
 </g>
 </g>
 <!-- N8&#45;&gt;N9 -->
 <g id="edge21" class="edge">
 <title>N8-&gt;N9</title>
-<g id="a_edge21"><a xlink:href="http://xmlns.com/foaf/0.1/knowns" xlink:title="foaf:knowns">
+<g id="a_edge21"><a xlink:href="http://xmlns.com/foaf/0.1/knows" xlink:title="foaf:knows">
 <path fill="none" stroke="#000000" d="M541.8443,-391.4798C545.5812,-396.8433 549.0443,-402.9551 551,-409.2 553.7111,-417.8571 551.5415,-426.9604 547.5907,-435.1235"/>
 <polygon fill="#000000" stroke="#000000" points="544.5114,-433.457 542.5386,-443.8665 550.5723,-436.9593 544.5114,-433.457"/>
 </a>
 </g>
-<g id="a_edge21-label"><a xlink:href="http://xmlns.com/foaf/0.1/knowns" xlink:title="foaf:knowns">
-<text text-anchor="middle" x="587.9888" y="-413.4" font-family="Times,serif" font-size="14.00" fill="#000000">foaf:knowns</text>
+<g id="a_edge21-label"><a xlink:href="http://xmlns.com/foaf/0.1/knows" xlink:title="foaf:knows">
+<text text-anchor="middle" x="587.9888" y="-413.4" font-family="Times,serif" font-size="14.00" fill="#000000">foaf:knows</text>
 </a>
 </g>
 </g>
@@ -409,26 +409,26 @@
 <!-- N5&#45;&gt;N8 -->
 <g id="edge40" class="edge">
 <title>N5-&gt;N8</title>
-<g id="a_edge40"><a xlink:href="http://xmlns.com/foaf/0.1/knowns" xlink:title="foaf:knowns">
+<g id="a_edge40"><a xlink:href="http://xmlns.com/foaf/0.1/knows" xlink:title="foaf:knows">
 <path fill="none" stroke="#000000" d="M316.3617,-302.4985C316.9728,-314.0073 319.7887,-328.3561 329.0224,-337.2 338.6507,-346.4219 360.1918,-353.3494 385.643,-358.5296"/>
 <polygon fill="#000000" stroke="#000000" points="385.0924,-361.9877 395.5721,-360.4306 386.4087,-355.1126 385.0924,-361.9877"/>
 </a>
 </g>
-<g id="a_edge40-label"><a xlink:href="http://xmlns.com/foaf/0.1/knowns" xlink:title="foaf:knowns">
-<text text-anchor="middle" x="364.9888" y="-324.6" font-family="Times,serif" font-size="14.00" fill="#000000">foaf:knowns</text>
+<g id="a_edge40-label"><a xlink:href="http://xmlns.com/foaf/0.1/knows" xlink:title="foaf:knows">
+<text text-anchor="middle" x="364.9888" y="-324.6" font-family="Times,serif" font-size="14.00" fill="#000000">foaf:knows</text>
 </a>
 </g>
 </g>
 <!-- N5&#45;&gt;N9 -->
 <g id="edge39" class="edge">
 <title>N5-&gt;N9</title>
-<g id="a_edge39"><a xlink:href="http://xmlns.com/foaf/0.1/knowns" xlink:title="foaf:knowns">
+<g id="a_edge39"><a xlink:href="http://xmlns.com/foaf/0.1/knows" xlink:title="foaf:knows">
 <path fill="none" stroke="#000000" d="M295.9479,-302.5812C272.747,-324.8298 241.3991,-363.013 263.0224,-391.2 282.0067,-415.9469 351.1102,-433.9484 413.8495,-445.6062"/>
 <polygon fill="#000000" stroke="#000000" points="413.3911,-449.0802 423.8555,-447.4228 414.6416,-442.1927 413.3911,-449.0802"/>
 </a>
 </g>
-<g id="a_edge39-label"><a xlink:href="http://xmlns.com/foaf/0.1/knowns" xlink:title="foaf:knowns">
-<text text-anchor="middle" x="298.9888" y="-369" font-family="Times,serif" font-size="14.00" fill="#000000">foaf:knowns</text>
+<g id="a_edge39-label"><a xlink:href="http://xmlns.com/foaf/0.1/knows" xlink:title="foaf:knows">
+<text text-anchor="middle" x="298.9888" y="-369" font-family="Times,serif" font-size="14.00" fill="#000000">foaf:knows</text>
 </a>
 </g>
 </g>
@@ -505,13 +505,13 @@
 <!-- N9&#45;&gt;N18 -->
 <g id="edge29" class="edge">
 <title>N9-&gt;N18</title>
-<g id="a_edge29"><a xlink:href="http://xmlns.com/foaf/0.1/knowns" xlink:title="foaf:knowns">
+<g id="a_edge29"><a xlink:href="http://xmlns.com/foaf/0.1/knows" xlink:title="foaf:knows">
 <path fill="none" stroke="#000000" d="M586.7454,-444.961C627.4524,-433.7601 682.7013,-419.3524 732.0224,-409.2 766.175,-402.1699 803.4093,-395.8179 837.8511,-390.476"/>
 <polygon fill="#000000" stroke="#000000" points="838.6101,-393.9006 847.9633,-388.9239 837.5481,-386.9816 838.6101,-393.9006"/>
 </a>
 </g>
-<g id="a_edge29-label"><a xlink:href="http://xmlns.com/foaf/0.1/knowns" xlink:title="foaf:knowns">
-<text text-anchor="middle" x="767.9888" y="-413.4" font-family="Times,serif" font-size="14.00" fill="#000000">foaf:knowns</text>
+<g id="a_edge29-label"><a xlink:href="http://xmlns.com/foaf/0.1/knows" xlink:title="foaf:knows">
+<text text-anchor="middle" x="767.9888" y="-413.4" font-family="Times,serif" font-size="14.00" fill="#000000">foaf:knows</text>
 </a>
 </g>
 </g>
@@ -531,26 +531,26 @@
 <!-- N9&#45;&gt;N8 -->
 <g id="edge27" class="edge">
 <title>N9-&gt;N8</title>
-<g id="a_edge27"><a xlink:href="http://xmlns.com/foaf/0.1/knowns" xlink:title="foaf:knowns">
+<g id="a_edge27"><a xlink:href="http://xmlns.com/foaf/0.1/knows" xlink:title="foaf:knows">
 <path fill="none" stroke="#000000" d="M492.86,-444.1646C486.4812,-439.1841 480.678,-433.1384 477.0224,-426 471.7241,-415.6537 476.7334,-405.8586 485.2625,-397.5789"/>
 <polygon fill="#000000" stroke="#000000" points="487.6924,-400.1089 493.1058,-391.0015 483.1945,-394.7453 487.6924,-400.1089"/>
 </a>
 </g>
-<g id="a_edge27-label"><a xlink:href="http://xmlns.com/foaf/0.1/knowns" xlink:title="foaf:knowns">
-<text text-anchor="middle" x="512.9888" y="-413.4" font-family="Times,serif" font-size="14.00" fill="#000000">foaf:knowns</text>
+<g id="a_edge27-label"><a xlink:href="http://xmlns.com/foaf/0.1/knows" xlink:title="foaf:knows">
+<text text-anchor="middle" x="512.9888" y="-413.4" font-family="Times,serif" font-size="14.00" fill="#000000">foaf:knows</text>
 </a>
 </g>
 </g>
 <!-- N9&#45;&gt;N5 -->
 <g id="edge28" class="edge">
 <title>N9-&gt;N5</title>
-<g id="a_edge28"><a xlink:href="http://xmlns.com/foaf/0.1/knowns" xlink:title="foaf:knowns">
+<g id="a_edge28"><a xlink:href="http://xmlns.com/foaf/0.1/knows" xlink:title="foaf:knows">
 <path fill="none" stroke="#000000" d="M371.3775,-453.6107C282.9835,-444.9115 185.3839,-427.2082 162.0224,-391.2 136.0715,-351.2007 190.0551,-322.1016 241.2803,-304.4721"/>
 <polygon fill="#000000" stroke="#000000" points="242.4054,-307.7865 250.7931,-301.3137 240.1997,-301.1431 242.4054,-307.7865"/>
 </a>
 </g>
-<g id="a_edge28-label"><a xlink:href="http://xmlns.com/foaf/0.1/knowns" xlink:title="foaf:knowns">
-<text text-anchor="middle" x="197.9888" y="-369" font-family="Times,serif" font-size="14.00" fill="#000000">foaf:knowns</text>
+<g id="a_edge28-label"><a xlink:href="http://xmlns.com/foaf/0.1/knows" xlink:title="foaf:knows">
+<text text-anchor="middle" x="197.9888" y="-369" font-family="Times,serif" font-size="14.00" fill="#000000">foaf:knows</text>
 </a>
 </g>
 </g>

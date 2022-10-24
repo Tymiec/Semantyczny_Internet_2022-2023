@@ -1,0 +1,9 @@
+BASE <https://wiedzmin.fandom.com/wiki/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rel: <https://example.org/relations>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX fhkb: <http://www.example.com/genealogy.owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+ASK { <Ciri> <flees> <Dziki_Gon> }
