@@ -14,5 +14,11 @@
 - [X] Zadanie 7
 - [X] Zadanie 8
 
+### [Querying with SPARQL](Zestaw%202)
 
-> Zaktualizowano 11.10.2022
+- [X] Zadanie 1
+- [X] Zadanie 2
+- [X] Zadanie 3
+- [X] Zadanie 4
+
+> Zaktualizowano 24.10.2022
