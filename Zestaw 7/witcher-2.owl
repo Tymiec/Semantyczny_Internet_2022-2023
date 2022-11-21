@@ -34,19 +34,28 @@
 
     <!-- https://your-name/witcher/canStay -->
 
-    <owl:ObjectProperty rdf:about="https://your-name/witcher/canStay"/>
+    <owl:ObjectProperty rdf:about="https://your-name/witcher/canStay">
+        <rdfs:domain rdf:resource="https://your-name/witcher/Place"/>
+        <rdfs:range rdf:resource="https://your-name/witcher/Person"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- https://your-name/witcher/isRuledBy -->
 
-    <owl:ObjectProperty rdf:about="https://your-name/witcher/isRuledBy"/>
+    <owl:ObjectProperty rdf:about="https://your-name/witcher/isRuledBy">
+        <rdfs:domain rdf:resource="https://your-name/witcher/Nation"/>
+        <rdfs:range rdf:resource="https://your-name/witcher/Person"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- https://your-name/witcher/law -->
 
-    <owl:ObjectProperty rdf:about="https://your-name/witcher/law"/>
+    <owl:ObjectProperty rdf:about="https://your-name/witcher/law">
+        <rdfs:domain rdf:resource="https://your-name/witcher/Nation"/>
+        <rdfs:range rdf:resource="https://your-name/witcher/SourceOfLaw"/>
+    </owl:ObjectProperty>
     
 
 
@@ -335,22 +344,6 @@
     
 
 
-    <!-- https://your-name/witcher/SchoolOfCat -->
-
-    <owl:Class rdf:about="https://your-name/witcher/SchoolOfCat">
-        <rdfs:subClassOf rdf:resource="https://your-name/witcher/WitcherSchools"/>
-    </owl:Class>
-    
-
-
-    <!-- https://your-name/witcher/SchoolOfWolf -->
-
-    <owl:Class rdf:about="https://your-name/witcher/SchoolOfWolf">
-        <rdfs:subClassOf rdf:resource="https://your-name/witcher/WitcherSchools"/>
-    </owl:Class>
-    
-
-
     <!-- https://your-name/witcher/SourceOfLaw -->
 
     <owl:Class rdf:about="https://your-name/witcher/SourceOfLaw"/>
@@ -499,12 +492,6 @@
     <owl:Class rdf:about="https://your-name/witcher/WitcherOfWolfSchool">
         <rdfs:subClassOf rdf:resource="https://your-name/witcher/Witcher"/>
     </owl:Class>
-    
-
-
-    <!-- https://your-name/witcher/WitcherSchools -->
-
-    <owl:Class rdf:about="https://your-name/witcher/WitcherSchools"/>
     
 
 
