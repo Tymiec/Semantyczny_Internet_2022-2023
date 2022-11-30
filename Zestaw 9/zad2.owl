@@ -1,0 +1,837 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://your-name/witcher/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://your-name/witcher/">
+    <Prefix name="" IRI="https://your-name/witcher/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="Alcohol"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Bard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="City"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Constitution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ConstitutionalMonarchy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Dwarf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Elf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Emperor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Empire"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Human"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Job"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="King"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Kingdom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MandrakeTincture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Monarchy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Nation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Place"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Ruler"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="SchoolOfCat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="SchoolOfWolf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="SourceOfLaw"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Stronghold"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="StrongholdOfWolfSchool"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="SupremePriest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="TemeriansRye"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Theocracy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Vodka"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="WillOfEmperor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="WillOfGod"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="WillOfKing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Witcher"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="WitcherOfCatSchool"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="WitcherOfWolfSchool"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="WitcherSchools"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="WolfSchoolSpot"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="belongsTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="canStay"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasEnemyIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isAtWar"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isCitizen"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isRuledBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="law"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="livesIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="rules"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="ag"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Ciri"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="EmhyrVarEmreis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Foltest"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Geralt"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="KaerMorhen"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Nilfgard"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Temeria"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Thaler"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Wyzima"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="Monarchy"/>
+        <ObjectIntersectionOf>
+            <Class IRI="Nation"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="isRuledBy"/>
+                <Class IRI="King"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="Vodka"/>
+        <ObjectUnionOf>
+            <Class IRI="MandrakeTincture"/>
+            <Class IRI="TemeriansRye"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="WolfSchoolSpot"/>
+        <ObjectIntersectionOf>
+            <Class IRI="Place"/>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="canStay"/>
+                <Class IRI="WitcherOfWolfSchool"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="Bard"/>
+        <Class IRI="Job"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="City"/>
+        <Class IRI="Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="City"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="canStay"/>
+            <Class IRI="WitcherOfCatSchool"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="City"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="canStay"/>
+            <Class IRI="WitcherOfWolfSchool"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Constitution"/>
+        <Class IRI="SourceOfLaw"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ConstitutionalMonarchy"/>
+        <Class IRI="Nation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ConstitutionalMonarchy"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="isRuledBy"/>
+            <Class IRI="King"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ConstitutionalMonarchy"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="law"/>
+            <Class IRI="Constitution"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Dwarf"/>
+        <Class IRI="Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Elf"/>
+        <Class IRI="Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Emperor"/>
+        <Class IRI="Ruler"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Empire"/>
+        <Class IRI="Nation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Empire"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="law"/>
+            <Class IRI="WillOfEmperor"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Human"/>
+        <Class IRI="Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="King"/>
+        <Class IRI="Ruler"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Kingdom"/>
+        <Class IRI="Nation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Kingdom"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="isRuledBy"/>
+            <Class IRI="King"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Kingdom"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="law"/>
+            <Class IRI="WillOfKing"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MandrakeTincture"/>
+        <Class IRI="Alcohol"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Nation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="isRuledBy"/>
+            <Class IRI="Person"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Ruler"/>
+        <Class IRI="Job"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Ruler"/>
+        <Class IRI="Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="SchoolOfCat"/>
+        <Class IRI="WitcherSchools"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="SchoolOfWolf"/>
+        <Class IRI="WitcherSchools"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Stronghold"/>
+        <Class IRI="Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="StrongholdOfWolfSchool"/>
+        <Class IRI="Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="StrongholdOfWolfSchool"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="canStay"/>
+            <Class IRI="WitcherOfWolfSchool"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="SupremePriest"/>
+        <Class IRI="Ruler"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="TemeriansRye"/>
+        <Class IRI="Alcohol"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Theocracy"/>
+        <Class IRI="Nation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Theocracy"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="law"/>
+            <Class IRI="WillOfGod"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Vodka"/>
+        <Class IRI="Alcohol"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="WillOfEmperor"/>
+        <Class IRI="SourceOfLaw"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="WillOfGod"/>
+        <Class IRI="SourceOfLaw"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="WillOfKing"/>
+        <Class IRI="SourceOfLaw"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Witcher"/>
+        <Class IRI="Job"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Witcher"/>
+        <Class IRI="Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="WitcherOfCatSchool"/>
+        <Class IRI="Witcher"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="WitcherOfWolfSchool"/>
+        <Class IRI="Witcher"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="Dwarf"/>
+        <Class IRI="Elf"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="Dwarf"/>
+        <Class IRI="Human"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="Dwarf"/>
+        <Class IRI="Witcher"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="Elf"/>
+        <Class IRI="Human"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="Elf"/>
+        <Class IRI="Witcher"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="Human"/>
+        <NamedIndividual IRI="Ciri"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Human"/>
+        <NamedIndividual IRI="EmhyrVarEmreis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Ruler"/>
+        <NamedIndividual IRI="EmhyrVarEmreis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="King"/>
+        <NamedIndividual IRI="Foltest"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Witcher"/>
+        <NamedIndividual IRI="Geralt"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Empire"/>
+        <NamedIndividual IRI="Nilfgard"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Kingdom"/>
+        <NamedIndividual IRI="Temeria"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Nation"/>
+        <NamedIndividual IRI="Temeria"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Human"/>
+        <NamedIndividual IRI="Thaler"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Place"/>
+        <NamedIndividual IRI="Wyzima"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="rules"/>
+        <NamedIndividual IRI="EmhyrVarEmreis"/>
+        <NamedIndividual IRI="Nilfgard"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isAtWar"/>
+        <NamedIndividual IRI="Nilfgard"/>
+        <NamedIndividual IRI="Temeria"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isRuledBy"/>
+        <NamedIndividual IRI="Nilfgard"/>
+        <NamedIndividual IRI="EmhyrVarEmreis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isRuledBy"/>
+        <NamedIndividual IRI="Temeria"/>
+        <NamedIndividual IRI="Foltest"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="canStay"/>
+        <NamedIndividual IRI="Thaler"/>
+        <NamedIndividual IRI="Temeria"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="livesIn"/>
+        <NamedIndividual IRI="Thaler"/>
+        <NamedIndividual IRI="Temeria"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="belongsTo"/>
+        <NamedIndividual IRI="Wyzima"/>
+        <NamedIndividual IRI="Temeria"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="ag"/>
+        <NamedIndividual IRI="Ciri"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">21</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="ag"/>
+        <NamedIndividual IRI="Geralt"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">123</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="ag"/>
+        <NamedIndividual IRI="Thaler"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">46</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="belongsTo"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasEnemyIn"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isAtWar"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isCitizen"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="livesIn"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="rules"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="belongsTo"/>
+        <Class IRI="Place"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="canStay"/>
+        <Class IRI="Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasEnemyIn"/>
+        <Class IRI="Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isAtWar"/>
+        <Class IRI="Nation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isCitizen"/>
+        <Class IRI="Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="livesIn"/>
+        <Class IRI="Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="rules"/>
+        <Class IRI="Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="belongsTo"/>
+        <Class IRI="Nation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="canStay"/>
+        <Class IRI="Nation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasEnemyIn"/>
+        <Class IRI="Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isAtWar"/>
+        <Class IRI="Nation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isCitizen"/>
+        <Class IRI="Nation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="livesIn"/>
+        <Class IRI="Nation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="rules"/>
+        <Class IRI="Nation"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="ag"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <FunctionalDataProperty>
+        <DataProperty IRI="ag"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="ag"/>
+        <Class IRI="Person"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="ag"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S2</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="Nation"/>
+                <Variable IRI="x"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="isAtWar"/>
+                <Variable IRI="x"/>
+                <Variable IRI="y"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="isRuledBy"/>
+                <Variable IRI="x"/>
+                <Variable IRI="z"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="isRuledBy"/>
+                <Variable IRI="y"/>
+                <Variable IRI="a"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="hasEnemyIn"/>
+                <Variable IRI="z"/>
+                <Variable IRI="a"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S3</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="Nation"/>
+                <Variable IRI="x"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="isAtWar"/>
+                <Variable IRI="x"/>
+                <Variable IRI="z"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="isAtWar"/>
+                <Variable IRI="z"/>
+                <Variable IRI="x"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S1</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="Person"/>
+                <Variable IRI="x"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="livesIn"/>
+                <Variable IRI="x"/>
+                <Variable IRI="y"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="canStay"/>
+                <Variable IRI="x"/>
+                <Variable IRI="y"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="isCitizen"/>
+                <Variable IRI="x"/>
+                <Variable IRI="y"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Ciri</IRI>
+        <Literal>Ciri</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>City</IRI>
+        <Literal>City</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Dwarf</IRI>
+        <Literal>Dwarf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Elf</IRI>
+        <Literal>Elf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>EmhyrVarEmreis</IRI>
+        <Literal>Emhyr var Emreis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Empire</IRI>
+        <Literal>Empire</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Geralt</IRI>
+        <Literal>Geralt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Human</IRI>
+        <Literal>Human</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Job</IRI>
+        <Literal>Job</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>KaerMorhen</IRI>
+        <Literal>Kaer Morhen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Kingdom</IRI>
+        <Literal>Kingdom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Nation</IRI>
+        <Literal>Nation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Nilfgard</IRI>
+        <Literal>Nilfgaard</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Person</IRI>
+        <Literal>Person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Place</IRI>
+        <Literal>Place</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Ruler</IRI>
+        <Literal>Ruler</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Stronghold</IRI>
+        <Literal>Stronghold</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Temeria</IRI>
+        <Literal>Temeria</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Theocracy</IRI>
+        <Literal>Theocracy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Witcher</IRI>
+        <Literal>Witcher</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Wyzima</IRI>
+        <Literal>Wyzima</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ag</IRI>
+        <Literal>age</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>belongsTo</IRI>
+        <Literal>belongsTo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>rules</IRI>
+        <Literal>rules</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
