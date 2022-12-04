@@ -13,7 +13,7 @@
 
 - [X] Zestaw 6
 - [X] Zestaw 7
-- [] Zestaw 8
+- [ ] Zestaw 8
     - [X] Zadanie 1
     - [X] Zadanie 2
     - [X] Zadanie 3
