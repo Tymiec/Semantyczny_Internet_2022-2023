@@ -24,6 +24,10 @@
     - [X] Zadanie 5_4
     - [X] Zadanie 5_5
     - [ ] Zadanie 5_6
-- [X] Zestaw 9
+- [ ] Zestaw 9
+    - [X] Zadanie 1
+    - [X] Zadanie 2
+    - [ ] Zadanie 3
+    - [ ] Zadanie 4
 
 > Zaktualizowano 04.12.2022
