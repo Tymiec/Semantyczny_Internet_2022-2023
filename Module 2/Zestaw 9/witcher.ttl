@@ -1,0 +1,21 @@
+@base <https://your-name/witcher>
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ex:    <http://www.example.org/#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+
+<PersonShape>
+    a sh:NodeShape ;
+    sh:targetClass <Person> ; # Applies to all persons
+    sh:property [              # _:b0
+        sh:path <age> ;        # constrains the values of <age>
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path <age> ;
+        sh:minInclusive 0 ;
+    ] ;
+    .
+ ###### add SHACL vocabulary ###### 

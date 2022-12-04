@@ -1,0 +1,593 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://your-name/witcher/"
+     xml:base="https://your-name/witcher/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:witcher="https://your-name/witcher/">
+    <owl:Ontology rdf:about="https://your-name/witcher/"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://your-name/witcher/belongsTo -->
+
+    <owl:ObjectProperty rdf:about="https://your-name/witcher/belongsTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://your-name/witcher/Place"/>
+        <rdfs:range rdf:resource="https://your-name/witcher/Nation"/>
+        <rdfs:label>belongsTo</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://your-name/witcher/canStay -->
+
+    <owl:ObjectProperty rdf:about="https://your-name/witcher/canStay">
+        <rdfs:domain rdf:resource="https://your-name/witcher/Place"/>
+        <rdfs:range rdf:resource="https://your-name/witcher/Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://your-name/witcher/isRuledBy -->
+
+    <owl:ObjectProperty rdf:about="https://your-name/witcher/isRuledBy">
+        <rdfs:domain rdf:resource="https://your-name/witcher/Nation"/>
+        <rdfs:range rdf:resource="https://your-name/witcher/Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://your-name/witcher/law -->
+
+    <owl:ObjectProperty rdf:about="https://your-name/witcher/law">
+        <rdfs:domain rdf:resource="https://your-name/witcher/Nation"/>
+        <rdfs:range rdf:resource="https://your-name/witcher/SourceOfLaw"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://your-name/witcher/rules -->
+
+    <owl:ObjectProperty rdf:about="https://your-name/witcher/rules">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://your-name/witcher/Person"/>
+        <rdfs:range rdf:resource="https://your-name/witcher/Nation"/>
+        <rdfs:label>rules</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://your-name/witcher/ag -->
+
+    <owl:DatatypeProperty rdf:about="https://your-name/witcher/ag">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://your-name/witcher/Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+        <rdfs:label>age</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://your-name/witcher/Alcohol -->
+
+    <owl:Class rdf:about="https://your-name/witcher/Alcohol"/>
+    
+
+
+    <!-- https://your-name/witcher/Bard -->
+
+    <owl:Class rdf:about="https://your-name/witcher/Bard">
+        <rdfs:subClassOf rdf:resource="https://your-name/witcher/Job"/>
+    </owl:Class>
+    
+
+
+    <!-- https://your-name/witcher/City -->
+
+    <owl:Class rdf:about="https://your-name/witcher/City">
+        <rdfs:subClassOf rdf:resource="https://your-name/witcher/Place"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://your-name/witcher/canStay"/>
+                <owl:someValuesFrom rdf:resource="https://your-name/witcher/WitcherOfCatSchool"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://your-name/witcher/canStay"/>
+                <owl:someValuesFrom rdf:resource="https://your-name/witcher/WitcherOfWolfSchool"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://your-name/witcher/canStay"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://your-name/witcher/WitcherOfCatSchool"/>
+                            <rdf:Description rdf:about="https://your-name/witcher/WitcherOfWolfSchool"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>City</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://your-name/witcher/Constitution -->
+
+    <owl:Class rdf:about="https://your-name/witcher/Constitution">
+        <rdfs:subClassOf rdf:resource="https://your-name/witcher/SourceOfLaw"/>
+    </owl:Class>
+    
+
+
+    <!-- https://your-name/witcher/ConstitutionalMonarchy -->
+
+    <owl:Class rdf:about="https://your-name/witcher/ConstitutionalMonarchy">
+        <rdfs:subClassOf rdf:resource="https://your-name/witcher/Nation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://your-name/witcher/isRuledBy"/>
+                <owl:someValuesFrom rdf:resource="https://your-name/witcher/King"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://your-name/witcher/law"/>
+                <owl:someValuesFrom rdf:resource="https://your-name/witcher/Constitution"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://your-name/witcher/Dwarf -->
+
+    <owl:Class rdf:about="https://your-name/witcher/Dwarf">
+        <rdfs:subClassOf rdf:resource="https://your-name/witcher/Person"/>
+        <owl:disjointWith rdf:resource="https://your-name/witcher/Elf"/>
+        <owl:disjointWith rdf:resource="https://your-name/witcher/Human"/>
+        <owl:disjointWith rdf:resource="https://your-name/witcher/Witcher"/>
+        <rdfs:label>Dwarf</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://your-name/witcher/Elf -->
+
+    <owl:Class rdf:about="https://your-name/witcher/Elf">
+        <rdfs:subClassOf rdf:resource="https://your-name/witcher/Person"/>
+        <owl:disjointWith rdf:resource="https://your-name/witcher/Human"/>
+        <owl:disjointWith rdf:resource="https://your-name/witcher/Witcher"/>
+        <rdfs:label>Elf</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://your-name/witcher/Emperor -->
+
+    <owl:Class rdf:about="https://your-name/witcher/Emperor">
+        <rdfs:subClassOf rdf:resource="https://your-name/witcher/Ruler"/>
+    </owl:Class>
+    
+
+
+    <!-- https://your-name/witcher/Empire -->
+
+    <owl:Class rdf:about="https://your-name/witcher/Empire">
+        <rdfs:subClassOf rdf:resource="https://your-name/witcher/Nation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://your-name/witcher/law"/>
+                <owl:someValuesFrom rdf:resource="https://your-name/witcher/WillOfEmperor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Empire</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://your-name/witcher/Human -->
+
+    <owl:Class rdf:about="https://your-name/witcher/Human">
+        <rdfs:subClassOf rdf:resource="https://your-name/witcher/Person"/>
+        <rdfs:label>Human</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://your-name/witcher/Job -->
+
+    <owl:Class rdf:about="https://your-name/witcher/Job">
+        <rdfs:label>Job</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://your-name/witcher/King -->
+
+    <owl:Class rdf:about="https://your-name/witcher/King">
+        <rdfs:subClassOf rdf:resource="https://your-name/witcher/Ruler"/>
+    </owl:Class>
+    
+
+
+    <!-- https://your-name/witcher/Kingdom -->
+
+    <owl:Class rdf:about="https://your-name/witcher/Kingdom">
+        <rdfs:subClassOf rdf:resource="https://your-name/witcher/Nation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://your-name/witcher/isRuledBy"/>
+                <owl:someValuesFrom rdf:resource="https://your-name/witcher/King"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://your-name/witcher/law"/>
+                <owl:someValuesFrom rdf:resource="https://your-name/witcher/WillOfKing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Kingdom</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://your-name/witcher/MandrakeTincture -->
+
+    <owl:Class rdf:about="https://your-name/witcher/MandrakeTincture">
+        <rdfs:subClassOf rdf:resource="https://your-name/witcher/Alcohol"/>
+    </owl:Class>
+    
+
+
+    <!-- https://your-name/witcher/Monarchy -->
+
+    <owl:Class rdf:about="https://your-name/witcher/Monarchy">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://your-name/witcher/Nation"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://your-name/witcher/isRuledBy"/>
+                        <owl:someValuesFrom rdf:resource="https://your-name/witcher/King"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://your-name/witcher/Nation -->
+
+    <owl:Class rdf:about="https://your-name/witcher/Nation">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://your-name/witcher/isRuledBy"/>
+                <owl:someValuesFrom rdf:resource="https://your-name/witcher/Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Nation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://your-name/witcher/Person -->
+
+    <owl:Class rdf:about="https://your-name/witcher/Person">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://your-name/witcher/ag"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://your-name/witcher/Place -->
+
+    <owl:Class rdf:about="https://your-name/witcher/Place">
+        <rdfs:label>Place</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://your-name/witcher/Ruler -->
+
+    <owl:Class rdf:about="https://your-name/witcher/Ruler">
+        <rdfs:subClassOf rdf:resource="https://your-name/witcher/Job"/>
+        <rdfs:subClassOf rdf:resource="https://your-name/witcher/Person"/>
+        <rdfs:label>Ruler</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://your-name/witcher/SourceOfLaw -->
+
+    <owl:Class rdf:about="https://your-name/witcher/SourceOfLaw"/>
+    
+
+
+    <!-- https://your-name/witcher/Stronghold -->
+
+    <owl:Class rdf:about="https://your-name/witcher/Stronghold">
+        <rdfs:subClassOf rdf:resource="https://your-name/witcher/Place"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://your-name/witcher/canStay"/>
+                <owl:someValuesFrom rdf:resource="https://your-name/witcher/WitcherOfCatSchool"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://your-name/witcher/canStay"/>
+                <owl:someValuesFrom rdf:resource="https://your-name/witcher/WitcherOfWolfSchool"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://your-name/witcher/canStay"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://your-name/witcher/WitcherOfCatSchool"/>
+                            <rdf:Description rdf:about="https://your-name/witcher/WitcherOfWolfSchool"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Stronghold</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://your-name/witcher/StrongholdOfWolfSchool -->
+
+    <owl:Class rdf:about="https://your-name/witcher/StrongholdOfWolfSchool">
+        <rdfs:subClassOf rdf:resource="https://your-name/witcher/Place"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://your-name/witcher/canStay"/>
+                <owl:allValuesFrom rdf:resource="https://your-name/witcher/WitcherOfWolfSchool"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://your-name/witcher/SupremePriest -->
+
+    <owl:Class rdf:about="https://your-name/witcher/SupremePriest">
+        <rdfs:subClassOf rdf:resource="https://your-name/witcher/Ruler"/>
+    </owl:Class>
+    
+
+
+    <!-- https://your-name/witcher/TemeriansRye -->
+
+    <owl:Class rdf:about="https://your-name/witcher/TemeriansRye">
+        <rdfs:subClassOf rdf:resource="https://your-name/witcher/Alcohol"/>
+    </owl:Class>
+    
+
+
+    <!-- https://your-name/witcher/Theocracy -->
+
+    <owl:Class rdf:about="https://your-name/witcher/Theocracy">
+        <rdfs:subClassOf rdf:resource="https://your-name/witcher/Nation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://your-name/witcher/law"/>
+                <owl:someValuesFrom rdf:resource="https://your-name/witcher/WillOfGod"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Theocracy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://your-name/witcher/Vodka -->
+
+    <owl:Class rdf:about="https://your-name/witcher/Vodka">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://your-name/witcher/MandrakeTincture"/>
+                    <rdf:Description rdf:about="https://your-name/witcher/TemeriansRye"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://your-name/witcher/Alcohol"/>
+    </owl:Class>
+    
+
+
+    <!-- https://your-name/witcher/WillOfEmperor -->
+
+    <owl:Class rdf:about="https://your-name/witcher/WillOfEmperor">
+        <rdfs:subClassOf rdf:resource="https://your-name/witcher/SourceOfLaw"/>
+    </owl:Class>
+    
+
+
+    <!-- https://your-name/witcher/WillOfGod -->
+
+    <owl:Class rdf:about="https://your-name/witcher/WillOfGod">
+        <rdfs:subClassOf rdf:resource="https://your-name/witcher/SourceOfLaw"/>
+    </owl:Class>
+    
+
+
+    <!-- https://your-name/witcher/WillOfKing -->
+
+    <owl:Class rdf:about="https://your-name/witcher/WillOfKing">
+        <rdfs:subClassOf rdf:resource="https://your-name/witcher/SourceOfLaw"/>
+    </owl:Class>
+    
+
+
+    <!-- https://your-name/witcher/Witcher -->
+
+    <owl:Class rdf:about="https://your-name/witcher/Witcher">
+        <rdfs:subClassOf rdf:resource="https://your-name/witcher/Job"/>
+        <rdfs:subClassOf rdf:resource="https://your-name/witcher/Person"/>
+        <rdfs:label>Witcher</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://your-name/witcher/WitcherOfCatSchool -->
+
+    <owl:Class rdf:about="https://your-name/witcher/WitcherOfCatSchool">
+        <rdfs:subClassOf rdf:resource="https://your-name/witcher/Witcher"/>
+    </owl:Class>
+    
+
+
+    <!-- https://your-name/witcher/WitcherOfWolfSchool -->
+
+    <owl:Class rdf:about="https://your-name/witcher/WitcherOfWolfSchool">
+        <rdfs:subClassOf rdf:resource="https://your-name/witcher/Witcher"/>
+    </owl:Class>
+    
+
+
+    <!-- https://your-name/witcher/WolfSchoolSpot -->
+
+    <owl:Class rdf:about="https://your-name/witcher/WolfSchoolSpot">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://your-name/witcher/canStay"/>
+                <owl:allValuesFrom rdf:resource="https://your-name/witcher/WitcherOfWolfSchool"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://your-name/witcher/Place"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://your-name/witcher/Ciri -->
+
+    <owl:NamedIndividual rdf:about="https://your-name/witcher/Ciri">
+        <rdf:type rdf:resource="https://your-name/witcher/Human"/>
+        <ag rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</ag>
+        <rdfs:label>Ciri</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://your-name/witcher/EmhyrVarEmreis -->
+
+    <owl:NamedIndividual rdf:about="https://your-name/witcher/EmhyrVarEmreis">
+        <rdf:type rdf:resource="https://your-name/witcher/Human"/>
+        <rdf:type rdf:resource="https://your-name/witcher/Ruler"/>
+        <rules rdf:resource="https://your-name/witcher/Nilfgard"/>
+        <rdfs:label>Emhyr var Emreis</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://your-name/witcher/Geralt -->
+
+    <owl:NamedIndividual rdf:about="https://your-name/witcher/Geralt">
+        <rdf:type rdf:resource="https://your-name/witcher/Witcher"/>
+        <ag rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">123</ag>
+        <rdfs:label>Geralt</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://your-name/witcher/KaerMorhen -->
+
+    <owl:NamedIndividual rdf:about="https://your-name/witcher/KaerMorhen">
+        <rdfs:label>Kaer Morhen</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://your-name/witcher/Nilfgard -->
+
+    <owl:NamedIndividual rdf:about="https://your-name/witcher/Nilfgard">
+        <rdf:type rdf:resource="https://your-name/witcher/Empire"/>
+        <rdfs:label>Nilfgaard</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://your-name/witcher/Temeria -->
+
+    <owl:NamedIndividual rdf:about="https://your-name/witcher/Temeria">
+        <rdf:type rdf:resource="https://your-name/witcher/Nation"/>
+        <rdfs:label>Temeria</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://your-name/witcher/Wyzima -->
+
+    <owl:NamedIndividual rdf:about="https://your-name/witcher/Wyzima">
+        <rdf:type rdf:resource="https://your-name/witcher/Place"/>
+        <belongsTo rdf:resource="https://your-name/witcher/Temeria"/>
+        <rdfs:label>Wyzima</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
