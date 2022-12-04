@@ -1,24 +1,25 @@
 # Semantyczny Internet
 
+## Moduły
 
-## Zestaw
+### [BASICS](Module%201)
 
-### [Modeling with RDF and RDFS 1](Zestaw%201)
+- [X] Zestaw 1
+- [X] Zestaw 2
+- [X] Zestaw 3
+- [X] Zestaw 4
 
-- [X] Zadanie 1
-- [X] Zadanie 2
-- [X] Zadanie 3
-- [X] Zadanie 4
-- [X] Zadanie 5
-- [X] Zadanie 6
-- [X] Zadanie 7
-- [X] Zadanie 8
+### [Ontologies](Module%202)
 
-### [Querying with SPARQL](Zestaw%202)
+- [X] Zestaw 6
+- [X] Zestaw 7
+- [] Zestaw 8
+    - [X] Zadanie 1
+    - [X] Zadanie 2
+    - [X] Zadanie 3
+    - [ ] Zadanie 4
+    - [X] Zadanie 5_1
+    - [X] Zadanie 5_2
+- [X] Zestaw 9
 
-- [X] Zadanie 1
-- [X] Zadanie 2
-- [X] Zadanie 3
-- [X] Zadanie 4
-
-> Zaktualizowano 24.10.2022
+> Zaktualizowano 04.12.2022
